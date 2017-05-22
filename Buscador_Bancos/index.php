@@ -1,26 +1,106 @@
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <title></title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="stylesheet" href="Style.css"/>
-    </head>
-    <body>
-        <form id="loginform" method="" action="">
-        <input type="text" class="input" placeholder="E-mail" /> 
-        <input type="password" class="input" placeholder="Password" />
-        <input type="submit" class="loginbutton" value="SIGN IN" />
-        </form>
-        <a href="#">Click here for new users</a>
-    <?php
-        //require_once "/REST/UsuarioApi.php";    
-        //$UsuarioApi = new UsuarioApi();
-        //$UsuarioAPo->API();
-    ?>
-    </body>
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+    <meta charset="utf-8">
+    <title>Flat Login</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="Style.csss"/>
+    <!-- Mobile Specific Metas
+  ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+  ================================================== -->
+
+    <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+    <div class="container">
+        <div class="flat-form">
+            <ul class="tabs">
+                <li>
+                    <a href="#login" class="active">Login</a>
+                </li>
+                <li>
+                    <a href="#register">Register</a>
+                </li>
+                <li>
+                    <a href="#reset">Reset Password</a>
+                </li>
+            </ul>
+            <div id="login" class="form-action show">
+                <h1>Login on webapp</h1>
+                <p>
+                    Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                    Maecenas sed diam eget risus varius bladit sit amet non
+                </p>
+                <form>
+                    <ul>
+                        <li>
+                            <input type="text" placeholder="Username" />
+                        </li>
+                        <li>
+                            <input type="password" placeholder="Password" />
+                        </li>
+                        <li>
+                            <input type="submit" value="Login" class="button" />
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <!--/#login.form-action-->
+            <div id="register" class="form-action hide">
+                <h1>Register</h1>
+                <p>
+                    You should totally sign up for our super awesome service.
+                    It's what all the cool kids are doing nowadays.
+                </p>
+                <form>
+                    <ul>
+                        <li>
+                            <input type="text" placeholder="Username" />
+                        </li>
+                        <li>
+                            <input type="password" placeholder="Password" />
+                        </li>
+                        <li>
+                            <input type="submit" value="Sign Up" class="button" />
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <!--/#register.form-action-->
+            <div id="reset" class="form-action hide">
+                <h1>Reset Password</h1>
+                <p>
+                    To reset your password enter your email and your birthday
+                    and we'll send you a link to reset your password.
+                </p>
+                <form>
+                    <ul>
+                        <li>
+                            <input type="text" placeholder="Email" />
+                        </li>
+                        <li>
+                            <input type="text" placeholder="Birthday" />
+                        </li>
+                        <li>
+                            <input type="submit" value="Send" class="button" />
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <!--/#register.form-action-->
+        </div>
+    </div>
+    <script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+</body>
 </html>
+
