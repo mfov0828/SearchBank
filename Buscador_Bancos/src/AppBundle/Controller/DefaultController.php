@@ -6,6 +6,10 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
+use sensio\Bundle\FrameworkExreaBundle\configuration\Method;
+use Symfony\Component\HttpFoundation\response;
+
+
 class DefaultController extends Controller
 {
     /**
