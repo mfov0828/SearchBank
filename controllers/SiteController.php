@@ -118,8 +118,18 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionAbout()
+    public function actionBuscador()
     {
-        return $this->render('about');
+        return $this->render('buscador');
+    }
+    
+    /**
+     * Displays blog page.
+     *
+     * @return string
+     */
+    public function actionBlog()
+    {
+        return $this->render('https://seducacionfinanciera.wordpress.com/');
     }
 }
