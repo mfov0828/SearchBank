@@ -68,6 +68,10 @@ class SiteController extends Controller
      *
      * @return string
      */
+    public function  actionRegister()
+    {
+        return $this->render('register');
+    }
     public function actionLogin()
     {
         if (!Yii::$app->user->isGuest) {

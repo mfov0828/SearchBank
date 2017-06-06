@@ -1,22 +1,17 @@
 <?php
-
-/* @var $this yii\web\View */
-/* @var $form yii\bootstrap\ActiveForm */
-/* @var $model app\models\LoginForm */
-
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
-
-$this->title = 'Login';
+$this->title = 'Registro';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="site-login">
-    <h1><?= Html::encode($this->title) ?></h1>
 
-    <p>Please fill out the following fields to login:</p>
+<!DOCTYPE html>
+<html lang="en">
 
-    <?php $form = ActiveForm::begin([
-        'id' => 'login-form',
+<body> 
+     <h1><?= Html::encode($this->title) ?></h1>
+ <f<?php $form = ActiveForm::begin([
+        'id' => 'register-form',
         'layout' => 'horizontal',
         'fieldConfig' => [
             'template' => "{label}\n<div class=\"col-lg-3\">{input}</div>\n<div class=\"col-lg-8\">{error}</div>",
@@ -24,11 +19,17 @@ $this->params['breadcrumbs'][] = $this->title;
         ],
     ]); ?>
     
-        <?= $form->field($model, 'username')->textInput(['autofocus' => true]) ?>
+        <?= $form->field($model, 'nombre')->textInput() ?>
+        
+        <?= $form->field($model, 'apellido')->textInput() ?>
+
+        <?= $form->field($model, 'correo')->textInput() ?>
 
         <?= $form->field($model, 'password')->passwordInput() ?>
 
-        <?= $form->field($model, 'rememberMe')->checkbox([
+        <?= $form->field($model, 'telefono')->numberInput() ?>
+
+        <?= $form->field($model, 'acepto')->checkbox([
             'template' => "<div class=\"col-lg-offset-1 col-lg-3\">{input} {label}</div>\n<div class=\"col-lg-8\">{error}</div>",
         ]) ?>
 
@@ -45,3 +46,4 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="col-lg-offset-1" style="color:#999;">
     </div>
 </div>
+
