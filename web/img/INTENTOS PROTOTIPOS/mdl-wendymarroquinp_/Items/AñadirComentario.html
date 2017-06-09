@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Politécnico Grancolombiano</title>
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" size="157x160" href="Iconos1/iconoPoli.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Politécnico Grancolombiano">
+    <link rel="apple-touch-icon-precomposed" href="Iconos1/ios-poli.png">
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+    <link rel="shortcut icon" href="Iconos1/shortIcon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.cyan-light_blue.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+      <header class="demo-header mdl-layout__header mdl-color--blue-700 mdl-color-text--grey-800">
+        <div class="mdl-layout__header-row">
+		<img src="Iconos1/logoPoli.jpg"> 
+          <span class="mdl-layout-title">Añadir Comentario</span>
+          <div class="mdl-layout-spacer"></div>
+        </div>
+      </header>
+	  <style>
+.demo-card-square.mdl-card {
+  width: 700px;
+  height: 300px;
+}
+.demo-card-square > .mdl-card__title {
+  background:
+    url('..mdl-wendymarroquinp/Iconos1/politecnico2.jpg');
+}
+</style>
+<div class="demo-card-square mdl-card mdl-shadow--2dp">
+ <div class="mdl-card__title mdl-card--expand">
+    <img src="Iconos1/politecnico2.jpg"> 
+	 <h2 class="mdl-card__title-text">Gestión de preguntas y respuestas frecuentes</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+    <form action="#">
+             <i class="mdl-color-text--blue-800 material-icons" size="80x80" role="presentation">person</i>
+         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+             <input class="mdl-textfield__input" type="text" id="sample3">
+             <label class="mdl-textfield__label" for="sample3">Escribe un comentario...</label>
+         </div>
+		 <button id="demo-show-snackbar" class="mdl-button mdl-js-button mdl-button--raised" type="button">Comentar
+		 <i class="mdl-color-text--blue-800 material-icons" role="presentation">done_all</i>
+		 </button>
+
+                     <div id="demo-snackbar-example" class="mdl-js-snackbar mdl-snackbar">
+                         <div class="mdl-snackbar__text"></div>
+                             <button class="mdl-snackbar__action" type="button"></button>
+                     </div>
+             <script>
+                 (function() {
+                 'use strict';
+                  var snackbarContainer = document.querySelector('#demo-snackbar-example');
+                  var showSnackbarButton = document.querySelector('#demo-show-snackbar');
+                  var handler = function(event) {
+                      showSnackbarButton.style.backgroundColor = '';
+                 };
+                 showSnackbarButton.addEventListener('click', function() {
+                  'use strict';
+                 showSnackbarButton.style.backgroundColor = '#' +
+                 Math.floor(Math.random() * 0xFFFFFF).toString(16);
+                 var data = {
+                 message: 'Comentario agregado',
+                 timeout: 2000,
+                  actionHandler: handler,
+                 actionText: 'Deshacer'
+                   };
+                  snackbarContainer.MaterialSnackbar.showSnackbar(data);
+             });
+             }());
+              </script>
+     </form>
+        <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored">
+             <i class="material-icons">mood</i>
+        </button>
+        <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored">
+             <i class="material-icons">add_a_photo</i>
+        </button>
+		 <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored">
+             <i class="material-icons">file_upload</i>
+        </button>
+		<button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored">
+             <i class="material-icons">format_list_bulleted</i>
+        </button>
+        <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored">
+             <i class="material-icons">format_list_numbered</i>
+        </button>
+  </div>
+</div>
+	    <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+ </body>
+</html>

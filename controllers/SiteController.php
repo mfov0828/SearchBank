@@ -136,4 +136,13 @@ class SiteController extends Controller
     {
         return $this->render('https://seducacionfinanciera.wordpress.com/');
     }
+        /**
+     * Displays blog page.
+     *
+     * @return string
+     */
+        public function actionResultados()
+    {
+        return $this->render('resultados');
+    }
 }
