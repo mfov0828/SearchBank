@@ -7,14 +7,7 @@
 
         
     <main class="mdl-layout__content--midle">
-        <div class="mdl-grid portfolio-max-width">
-            <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
-                <div class="mdl-card__media">
-                    <img class="article-image" src="img/logo_sef.jpeg"width="220" height="140" border="0" alt="" style="padding:20px;">
-                </div>
-                
-            </div>
-        </div>
+        
             <center>
 		<h1>Bancos asociados</h1>
             </center>
