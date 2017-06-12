@@ -10,12 +10,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
   <body>
     <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
-    <header class="demo-header mdl-layout__header mdl-color--grey-800 mdl-color-text--indigo-600">
-        <div class="mdl-layout__header-row">
-          <span align ="center"class="mdl-layout-title">  Buscador de bancos SearchBank </span>
-          <div class="mdl-layout-spacer"></div>
-        </div>
-    </header>
+
     
       <div class="demo-drawer mdl-layout__drawer mdl-color--blue-800 mdl-color-text--white-50">
         <header class="demo-drawer-header">
@@ -48,29 +43,69 @@ $this->params['breadcrumbs'][] = $this->title;
       </div>
     
     </div>
+    
       
-      
-      
-      <main class="mdl-layout__content mdl-color--grey-100">
+ <main class="mdl-layout__content mdl-color--grey-100">     
         <div class="mdl-grid demo-content">
-            <div align ="rigth">
-                
+            
+            <center>
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--4-col">
+                        
                 <div class="mdl-card__media">
-                    <img class="article-image" src="img/bancolpatria.png" border="0" alt="">
                 </div>
                 <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">Banco Colpatria</h2>
+                        <h2 class="mdl-card__title-text"></h2>
                 </div>
                 <div class="mdl-card__supporting-text">
-                    Colpatria es un grupo Empresarial Colombiano, con negocios en banca, seguros, construccion y mineria entre otros. En el banco Colpatria desde 2012 participa como socio el banco canadiense Scotiabank. Quien adquirió el 51% de sus acciones.
                 </div>
                 <div class="mdl-card__actions mdl-card--border">
-                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://www.colpatria.com/Securities/acerca-de-securities/securities/educacion-financiera">Leer más</a>
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://misfinanzasencasa.davivienda.com/#!/inicio">Leer más</a>
+                </div>
+                        
+                    </div>
+  <div class="mdl-cell mdl-cell--4-col">
+      
+      
+                <div class="mdl-card__media">
+                    <img class="article-image" src="img/helm.jpg" border="0" alt="">
+                </div>
+                <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">Credito de  Estudio Helm Bank</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    El estudiante puede financiar su matrícula mediante el Crédito con Helm Bank, el cual le financia hasta el 100%, contando con los resultados de estudio inmediatamente. Es un crédito muy ágil y recomendado por muchos estudiantes.
+                 </div>
+                <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://www.grupohelm.com/personal/grupo/helm-comisionista-de-bolsa/educacion-financiera">Leer más</a>
+                </div>
+            
+  
+      
+  </div>
+  <div class="mdl-cell mdl-cell--4-col">
+                <div class="mdl-card__media">
+                    <img class="article-image" src="img/davivienda.jpg" border="0" alt="">
+                </div>
+                <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Credito Hipotecario Davivienda</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    Con este tipo de crédito usted escoge el sistema de pago de su inmueble, dejándolo como garantía del crédito.
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://misfinanzasencasa.davivienda.com/#!/inicio">Leer más</a>
+                </div>
+      
+  </div>
+</div>
+            </center>
                 
-            </div>
+            
             </div>
         </div>
       </main>
+         
       
       
       
